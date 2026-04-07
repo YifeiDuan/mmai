@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_GdNiO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.23580731
+_cell_length_b   5.49316529
+_cell_length_c   7.47467175
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdNiO3
+_chemical_formula_sum   'Gd4 Ni4 O12'
+_cell_volume   214.98019263
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.98402748  0.06537388  0.25000000  1
+  Gd  Gd1  1  0.48402748  0.43462612  0.75000000  1
+  Gd  Gd2  1  0.51597252  0.56537388  0.25000000  1
+  Gd  Gd3  1  0.01597252  0.93462612  0.75000000  1
+  Ni  Ni4  1  0.50000000  -0.00000000  0.00000000  1
+  Ni  Ni5  1  -0.00000000  0.50000000  0.00000000  1
+  Ni  Ni6  1  -0.00000000  0.50000000  0.50000000  1
+  Ni  Ni7  1  0.50000000  -0.00000000  0.50000000  1
+  O  O8  1  0.08819931  0.47878149  0.25000000  1
+  O  O9  1  0.58819931  0.02121851  0.75000000  1
+  O  O10  1  0.41180069  0.97878149  0.25000000  1
+  O  O11  1  0.91180069  0.52121851  0.75000000  1
+  O  O12  1  0.70100145  0.29833368  0.04557856  1
+  O  O13  1  0.20100145  0.20166632  0.95442144  1
+  O  O14  1  0.79899855  0.79833368  0.45442144  1
+  O  O15  1  0.29899855  0.70166632  0.54557856  1
+  O  O16  1  0.29899855  0.70166632  0.95442144  1
+  O  O17  1  0.79899855  0.79833368  0.04557856  1
+  O  O18  1  0.20100145  0.20166632  0.54557856  1
+  O  O19  1  0.70100145  0.29833368  0.45442144  1

@@ -1,0 +1,18 @@
+{
+  "experiment": "exp4_regression_film_finetune",
+  "mode": "film",
+  "freeze_encoders": false,
+  "target": "band_gap",
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "encoder_trainable": 14961986,
+  "head_trainable": 115841,
+  "training_time_s": 137.5,
+  "best_val_mae": 0.6495,
+  "test": {
+    "mae": 0.5879519581794739,
+    "rmse": 0.9287644941449146,
+    "r2": 0.6581528782844543
+  }
+}

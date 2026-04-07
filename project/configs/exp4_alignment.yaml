@@ -1,0 +1,56 @@
+# Exp 4: Contrastive Alignment (CLIP-style)
+
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+target: "band_gap"
+output_dir: "results/exp4_alignment"
+
+# Crystal graph (same as Exp 1)
+graph:
+  radius: 8.0
+  max_neighbors: 12
+  gaussian_dmin: 0.0
+  gaussian_dmax: 8.0
+  gaussian_step: 0.2
+
+# Text encoder (same as Exp 2)
+text:
+  model_name: "allenai/scibert_scivocab_uncased"
+  max_seq_len: 256
+
+# CGCNN encoder
+cgcnn:
+  atom_fea_len: 64
+  n_conv: 3
+  h_fea_len: 128
+  n_h: 1
+
+# Stage 1: Alignment pretraining
+alignment:
+  proj_dim: 128
+  temperature_init: 0.07
+  batch_size: 128
+  lr: 5.0e-4
+  encoder_lr_mult: 0.1
+  weight_decay: 0.01
+  epochs: 200
+  patience: 30
+  seed: 42
+  # Init from pretrained
+  cgcnn_ckpt: "results/exp1_cgcnn/best_model.pt"
+  bert_ckpt: "results/exp2_scibert/finetune/best_model.pt"
+  bert_unfreeze_last_n: 2
+  # Joint training
+  joint: false                 # true = joint alignment+regression, false = pure contrastive
+  alpha: 0.5                   # loss = alpha * L_contrastive + (1-alpha) * L_regression
+  soft_contrastive: false      # use soft InfoNCE (mask similar band gap negatives)
+  soft_margin: 0.5             # band gap margin for soft negatives (eV)
+
+# Stage 2: Downstream regression
+regression:
+  hidden_dim: 256
+  dropout: 0.2
+  batch_size: 16
+  lr: 1.0e-4
+  weight_decay: 0.01
+  epochs: 100
+  patience: 15

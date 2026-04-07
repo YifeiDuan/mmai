@@ -1,0 +1,26 @@
+# Exp 2: SciBERT Baseline (Text-only)
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+target: "band_gap"
+output_dir: "results/exp2_scibert"
+
+# Text encoder
+text:
+  model_name: "allenai/scibert_scivocab_uncased"
+  max_seq_len: 256
+
+# Model head
+model:
+  hidden_dim: 256
+  dropout: 0.1
+
+# Training
+train:
+  batch_size: 16
+  lr: 2.0e-5
+  weight_decay: 0.01
+  epochs: 50
+  patience: 10
+  scheduler_warmup_ratio: 0.1
+  seed: 42
+  freeze_bert: false        # set true for frozen encoder experiment
+  unfreeze_last_n_layers: 2 # only used when freeze_bert=false

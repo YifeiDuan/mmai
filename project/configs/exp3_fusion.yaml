@@ -1,0 +1,45 @@
+# Exp 3: Late Fusion (CGCNN + SciBERT)
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+target: "band_gap"
+output_dir: "results/exp3_fusion"
+
+# Crystal graph (same as Exp 1)
+graph:
+  radius: 8.0
+  max_neighbors: 12
+  gaussian_dmin: 0.0
+  gaussian_dmax: 8.0
+  gaussian_step: 0.2
+
+# Text encoder (same as Exp 2)
+text:
+  model_name: "allenai/scibert_scivocab_uncased"
+  max_seq_len: 256
+
+# CGCNN encoder
+cgcnn:
+  atom_fea_len: 64
+  n_conv: 3
+  h_fea_len: 128
+  n_h: 1
+
+# Fusion MLP
+fusion:
+  hidden_dim: 256
+  dropout: 0.2
+
+# Training
+train:
+  batch_size: 16
+  lr: 1.0e-4
+  weight_decay: 0.01
+  epochs: 100
+  patience: 15
+  seed: 42
+  # Encoder freezing strategy
+  freeze_cgcnn: false
+  freeze_bert: false
+  bert_unfreeze_last_n: 2
+  # Optional: load pretrained encoder weights
+  cgcnn_ckpt: "results/exp1_cgcnn/best_model.pt"
+  bert_ckpt: "results/exp2_scibert/finetune/best_model.pt"

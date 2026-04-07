@@ -1,0 +1,20 @@
+# Exp 0: Exploratory Data Analysis
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+output_dir: "results/figures/exp0_eda"
+
+plots:
+  band_gap_hist: true
+  formation_energy_hist: true
+  element_frequency: true
+  spacegroup_pie: true
+  wordcloud: true
+  text_length_dist: true
+  tsne_embedding: true
+
+# t-SNE / UMAP settings
+embedding:
+  model_name: "allenai/scibert_scivocab_uncased"
+  max_seq_len: 256
+  method: "tsne"          # tsne or umap
+  perplexity: 30
+  band_gap_threshold: 2.0 # split wide vs narrow gap for coloring

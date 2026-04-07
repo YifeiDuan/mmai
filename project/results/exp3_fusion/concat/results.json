@@ -1,0 +1,20 @@
+{
+  "experiment": "exp3_fusion_concat",
+  "fusion_type": "concat",
+  "target": "band_gap",
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 110228546,
+  "n_params_trainable": 15076418,
+  "pretrained_encoders": true,
+  "freeze_cgcnn": false,
+  "freeze_bert": false,
+  "training_time_s": 173.2,
+  "best_val_mae": 0.4596,
+  "test": {
+    "mae": 0.5834170579910278,
+    "rmse": 0.9546193774403529,
+    "r2": 0.6388553380966187
+  }
+}

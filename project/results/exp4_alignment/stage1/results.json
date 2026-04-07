@@ -1,0 +1,16 @@
+{
+  "experiment": "exp4_alignment_stage1",
+  "n_train": 383,
+  "n_val": 54,
+  "n_params_total": 110114114,
+  "n_params_trainable": 14961986,
+  "training_time_s": 281.3,
+  "best_val_retrieval_acc": 0.5278,
+  "final_val_metrics": {
+    "s2t_acc": 0.6111,
+    "t2s_acc": 0.4444,
+    "mean_retrieval_acc": 0.5278,
+    "mean_pos_sim": 0.8794,
+    "loss": 3.9238
+  }
+}

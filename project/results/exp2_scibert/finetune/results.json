@@ -1,0 +1,17 @@
+{
+  "experiment": "exp2_scibert_finetune",
+  "target": "band_gap",
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 110115585,
+  "n_params_trainable": 14963457,
+  "freeze_bert": false,
+  "training_time_s": 71.2,
+  "best_val_mae": 0.6221,
+  "test": {
+    "mae": 0.7506817579269409,
+    "rmse": 1.0609252704258205,
+    "r2": 0.5539430379867554
+  }
+}

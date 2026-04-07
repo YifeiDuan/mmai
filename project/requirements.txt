@@ -1,0 +1,18 @@
+# Core
+pandas>=1.5
+pyarrow
+numpy
+pyyaml
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+wordcloud
+
+# Text embeddings (Exp 0 t-SNE + Exp 2 baseline)
+torch>=2.0
+transformers>=4.30
+
+# Structure (Exp 1 baseline)
+pymatgen

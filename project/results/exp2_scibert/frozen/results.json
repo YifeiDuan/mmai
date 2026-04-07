@@ -1,0 +1,17 @@
+{
+  "experiment": "exp2_scibert_frozen",
+  "target": "band_gap",
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 110115585,
+  "n_params_trainable": 197121,
+  "freeze_bert": true,
+  "training_time_s": 132.6,
+  "best_val_mae": 1.0333,
+  "test": {
+    "mae": 1.2152080535888672,
+    "rmse": 1.432565179776638,
+    "r2": 0.18670237064361572
+  }
+}

@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_EuNpO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.94021533
+_cell_length_b   6.13438638
+_cell_length_c   8.55275324
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuNpO3
+_chemical_formula_sum   'Eu4 Np4 O12'
+_cell_volume   311.65870182
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.01681510  0.44873915  0.25000000  1
+  Eu  Eu1  1  0.98318490  0.55126085  0.75000000  1
+  Eu  Eu2  1  0.51681510  0.05126085  0.75000000  1
+  Eu  Eu3  1  0.48318490  0.94873915  0.25000000  1
+  Np  Np4  1  -0.00000000  -0.00000000  0.00000000  1
+  Np  Np5  1  0.50000000  0.50000000  0.00000000  1
+  Np  Np6  1  -0.00000000  -0.00000000  0.50000000  1
+  Np  Np7  1  0.50000000  0.50000000  0.50000000  1
+  O  O8  1  0.30161715  0.20040718  0.06559072  1
+  O  O9  1  0.69838285  0.79959282  0.93440928  1
+  O  O10  1  0.80161715  0.29959282  0.93440928  1
+  O  O11  1  0.69838285  0.79959282  0.56559072  1
+  O  O12  1  0.19838285  0.70040718  0.06559072  1
+  O  O13  1  0.30161715  0.20040718  0.43440928  1
+  O  O14  1  0.19838285  0.70040718  0.43440928  1
+  O  O15  1  0.80161715  0.29959282  0.56559072  1
+  O  O16  1  0.62108988  0.55125267  0.25000000  1
+  O  O17  1  0.37891012  0.44874733  0.75000000  1
+  O  O18  1  0.12108988  0.94874733  0.75000000  1
+  O  O19  1  0.87891012  0.05125267  0.25000000  1

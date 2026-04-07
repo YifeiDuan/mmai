@@ -1,0 +1,30 @@
+# Exp 1: CGCNN Baseline (Structure-only)
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+target: "band_gap"
+output_dir: "results/exp1_cgcnn"
+
+# Crystal graph
+graph:
+  radius: 8.0
+  max_neighbors: 12
+  gaussian_dmin: 0.0
+  gaussian_dmax: 8.0
+  gaussian_step: 0.2
+
+# Model
+model:
+  atom_fea_len: 64
+  n_conv: 3
+  h_fea_len: 128
+  n_h: 1
+
+# Training
+train:
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  epochs: 200
+  patience: 30        # early stopping
+  scheduler_patience: 15
+  scheduler_factor: 0.5
+  seed: 42

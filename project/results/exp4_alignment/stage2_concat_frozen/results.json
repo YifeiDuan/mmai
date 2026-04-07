@@ -1,0 +1,18 @@
+{
+  "experiment": "exp4_regression_concat_frozen",
+  "mode": "concat",
+  "freeze_encoders": true,
+  "target": "band_gap",
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "encoder_trainable": 0,
+  "head_trainable": 66049,
+  "training_time_s": 162.1,
+  "best_val_mae": 0.9638,
+  "test": {
+    "mae": 0.7905058860778809,
+    "rmse": 1.087643990904479,
+    "r2": 0.5311927795410156
+  }
+}

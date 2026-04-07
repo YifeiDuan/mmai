@@ -1,0 +1,31 @@
+# Model checkpoints (too large for GitHub)
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+*.egg
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments
+.env
+*.env
+
+# Byte-compiled
+*.so
+
+# Embeddings (can be large)
+*.npz
