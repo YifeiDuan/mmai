@@ -1,26 +1,22 @@
-# MMAI 2026 - Valdemar Danry
+# MMAI 2026 - Yifei Duan
 
 Welcome to my site for Modeling Multimodal AI 2026.
-This repo contains my homework assignments and random thoughts throughout the class.
+This repo contains my homework assignments and group project documentation throughout the class.
 
 ## Bio
-<img src="./imgs/profile.png" style="width:200px;">
 
-hi i’m valdemar. i arrived at MIT through a series of poor containment decisions involving curiosity and the internet. i do research on AI and human thinking which mostly means building experimental systems that refuse to let people intellectually vibe through life unchecked. i like making art / physical things and music. sometimes i produces papers. 
+Hi I'm Yifei, a 1st-year PhD at Institute for Data, Systems, and Society (IDSS). My research interests lie in the intersection of AI and sustainability. I previously completed dual SM in TPP (IDSS) and EECS at MIT.
 
 ## Final Project
-For my final project I created a brainrot optimized multi-modal generator (text, video, audio, tactile brainrot).
-[![MindMapper Demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+For the [final project](./project/), we explored how text data can complement the crystal graph representations of perovskite materials in property prediction and inverse design.
 
 ## Homework
-- [Homework 1 - Dataset: Hamster Cognitive State Classifier](./homework/homework-1/)
+- [Homework 1 - Dataset: $ABO_3$ Perovskite](./homework/homework-1/)
 - [Homework 2 - Fusion: Model That Fuses Weather Data, Tweets, and My Sleep Schedule to Predict Existential Dread
 ](./homework/homework-2/)
 - [Homework 3 - VLM: Training a Model on 10,000 Reddit Arguments and Release It Into Slack](./homework/homework-3/)
-- [Homework 4 - RL Model That Learns the Optimal Moment to Say Something Smart in a Seminar
-](./homework/homework-3/)
-- [Homework 5 - Agent That Runs a Cult but Uses Reinforcement Learning for Member Retention](./homework/homework-3/)
 
 
+<!-- 
 ## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. -->
