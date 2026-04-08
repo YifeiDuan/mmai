@@ -9,6 +9,13 @@ Explore and fine-tune a Vision-Language Model (VLM) for a domain-specific task: 
 ### Dataset Preparation
 Converted crystal structure CIF files from the HW1 dataset into 2D unit cell images for VLM input. Applied a **stratified 80/20 train/test split** by space group to preserve class distribution across the five space groups (Pm-3m, Pnma, R-3c, I4/mcm, P4mm), since Pnma accounts for ~1/3 of samples while the rarest group covers only ~5%.
 
+<p float="left">
+  <img src="figs/ovito_1.png" width="33%" />
+  <img src="figs/ovito_2.png" width="33%" />
+  <img src="figs/ovito_3.png" width="33%" />
+  <em>Examples of Ovito-Visualized Crystal Unit Cells.</em>
+</p>
+
 ### Baseline Inference (Pretrained Model)
 Ran the pretrained `Qwen2.5-VL-3B-Instruct` (no fine-tuning) on 4 held-out crystal images, testing 6 question phrasings (direct query, domain-specified, 5-option MCQ, 2-option MCQ, with/without non-greedy decoding):
 - Without options: model generates arbitrary space group symbols (0% accuracy).
