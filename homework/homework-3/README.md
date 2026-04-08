@@ -9,7 +9,7 @@ Explore and fine-tune a Vision-Language Model (VLM) for a domain-specific task: 
 ### Dataset Preparation
 Converted crystal structure CIF files from the HW1 dataset into 2D unit cell images for VLM input. Applied a **stratified 80/20 train/test split** by space group to preserve class distribution across the five space groups (Pm-3m, Pnma, R-3c, I4/mcm, P4mm), since Pnma accounts for ~1/3 of samples while the rarest group covers only ~5%.
 
-<p float="left">
+<p float="center">
   <img src="figs/ovito_1.png" width="33%" />
   <img src="figs/ovito_2.png" width="33%" />
   <img src="figs/ovito_3.png" width="33%" />
