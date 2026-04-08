@@ -13,10 +13,39 @@ Implemented and ran the full data pipeline:
 
 ### Visualization
 Explored the dataset with multiple visualization techniques:
-- **t-SNE** of combined categorical (space group, A/B sites) and numerical (band gap, formation energy, energy above hull) features — full dataset and random sample subsets.
+
+- **Scatter plot** of Band Gap vs Formation Energy
+
+<p align="center">
+  <img src="figs/fig_bandgap_vs_fe.png" width="500"/><br>
+  <em>Data Distribution: Band Gap vs Formation Energy.</em>
+</p>
+
 - **Bar plot** of space group distribution.
+
+<p align="center">
+  <img src="figs/fig_spacegroup_distribution.png" width="500"/><br>
+  <em>Space Group Distribution.</em>
+</p>
+
 - **Violin and scatter plots** of target property distributions, stratified by space group.
+
+
+<p align="center">
+  <img src="figs/fig_bandgap_by_sg.png" width="500"/><br>
+  <em>Band Gap Distribution by Space Group.</em>
+</p>
+
+
+<p align="center">
+  <img src="figs/fig_formenergy_by_sg.png" width="500"/><br>
+  <em>Formation Energy Distribution by Space Group.</em>
+</p>
+
 - **t-SNE of text embeddings** (via `all-MiniLM-L6-v2` SentenceTransformer) colored by space group, revealing that structural similarity is partially captured in the text latent space.
+
+
+
 
 ### Evaluation Metrics
 Selected and implemented regression metrics for model evaluation:
