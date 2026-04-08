@@ -3,16 +3,12 @@
 Welcome to my site for Modeling Multimodal AI 2026.
 This repo contains my homework assignments and group project documentation throughout the class.
 
-## Bio
-
-Hi I'm Yifei, a 1st-year PhD at Institute for Data, Systems, and Society (IDSS). My research interests lie in the intersection of AI and sustainability. I previously completed dual SM in TPP (IDSS) and EECS at MIT.
-
 ## Final Project
 For the [final project](./project/), we explored how text data can complement the crystal graph representations of perovskite materials in property prediction and inverse design.
 
 ## Homework
-- [Homework 1 - Dataset: $ABO_3$ Perovskite](./homework/homework-1/)
-- [Homework 2 - Fusion: Model That Fuses Weather Data, Tweets, and My Sleep Schedule to Predict Existential Dread
+- [Homework 1 - Dataset: Perovskite](./homework/homework-1/)
+- [Homework 2 - Fusion and Alignment: Multimodal Property Prediction; Contrastive Learning and Cross-modal Retrieval
 ](./homework/homework-2/)
 - [Homework 3 - VLM: Training a Model on 10,000 Reddit Arguments and Release It Into Slack](./homework/homework-3/)
 
