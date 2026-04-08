@@ -37,6 +37,22 @@ Trained a CLIP-style contrastive model to align graph and text embeddings in a s
 - **Graph → New text queries** (space group, local site geometry, A-site element): partial success — correct answer often appears in top-5 but not reliably top-1; negative cosine similarities observed for hard queries.
 - **Post-alignment visualization** (t-SNE): most failures in top-1 retrieval occur for structurally similar materials with nearly identical embeddings; top-5 retrieval is near-perfect, confirming that failures arise from embedding proximity rather than incorrect alignment.
 
+<p align="center">
+  <img src="figs/fig1_embeddings.png" width="500"/><br>
+  <em>Text-Graph Embedding Alignment.</em>
+</p>
+
+<p align="center">
+  <img src="figs/fig2_retrieval_success_cases.png" width="500"/><br>
+  <em>Text-Graph Embeddings: Successful and Failed Top1 Retrieval.</em>
+</p>
+
+<p align="center">
+  <img src="figs/fig2_retrieval_success_cases_top5.png" width="500"/><br>
+  <em>Text-Graph Embeddings: Successful and Failed Top5 Retrieval.</em>
+</p>
+
+
 
 ## Key Takeaways
 - Late fusion outperforms early and higher-order fusions on the small perovskite dataset — high-capacity interaction methods (TFN, LMF) are data-hungry and do not pay off with ~500 samples.
