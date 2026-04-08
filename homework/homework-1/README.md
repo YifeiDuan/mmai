@@ -44,6 +44,10 @@ Explored the dataset with multiple visualization techniques:
 
 - **t-SNE of text embeddings** (via `all-MiniLM-L6-v2` SentenceTransformer) colored by space group, revealing that structural similarity is partially captured in the text latent space.
 
+<p align="center">
+  <img src="figs/fig_text_embeddings.png" width="500"/><br>
+  <em>Text Embeddings (tSNE 2D Projections) Colored by Space Group.</em>
+</p>
 
 
 
