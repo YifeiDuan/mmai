@@ -8,9 +8,8 @@ For the [final project](./project/), we explored how text data can complement th
 
 ## Homework
 - [Homework 1 - Dataset: Perovskite](./homework/homework-1/)
-- [Homework 2 - Fusion and Alignment: Multimodal Property Prediction; Contrastive Learning and Cross-modal Retrieval
-](./homework/homework-2/)
-- [Homework 3 - VLM: Training a Model on 10,000 Reddit Arguments and Release It Into Slack](./homework/homework-3/)
+- [Homework 2 - Fusion and Alignment: Multimodal Property Prediction; Contrastive Learning and Cross-modal Retrieval](./homework/homework-2/)
+- [Homework 3 - VLM: Space Group Classification](./homework/homework-3/)
 
 
 <!-- 
