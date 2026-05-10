@@ -1,0 +1,15 @@
+{
+  "experiment": "exp1_cgcnn",
+  "target": "band_gap",
+  "n_train": 468,
+  "n_val": 63,
+  "n_test": 61,
+  "n_params": 80193,
+  "training_time_s": 6.0,
+  "best_val_mae": 0.5987,
+  "test": {
+    "mae": 0.6545722484588623,
+    "rmse": 0.9684924429331316,
+    "r2": 0.6197563409805298
+  }
+}

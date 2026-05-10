@@ -1,0 +1,26 @@
+# Inverse Design Agent — runtime config
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+oracle_ckpt_dir: "results/exp5b_multitask_film_nowarm"
+output_dir: "results/inverse_design"
+
+# Targets to sweep in a single run (eV)
+targets: [1.0, 2.0, 3.0]
+
+# Optimization budget
+n_iter: 5         # iter 0 random + 4 LLM-proposed
+n_per_iter: 5
+seed: 0
+std_threshold: 0.5  # band_gap_std threshold for low_confidence flag
+
+# LLM proposer
+proposer:
+  model_name: "Qwen/Qwen2.5-VL-3B-Instruct"
+  fallback_model: "Qwen/Qwen2.5-3B-Instruct"
+  max_new_tokens: 512
+  temperature: 0.7
+  top_p: 0.9
+  max_base_sample: 20  # how many candidate base structures to expose to LLM
+
+wandb:
+  enabled: false
+  project: "mmai-mpppo-inverse"

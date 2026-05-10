@@ -1,0 +1,20 @@
+[2026-05-07 19:52:35] Exp2 finetune seed=1337 on node4402
+[Exp2-finetune] Device: cuda
+[Exp2-finetune] Train=383, Val=54, Test=56
+[Exp2-finetune] Total params: 110,115,585, Trainable: 14,963,457
+  Epoch   1 | loss=3.5442 | val MAE=1.2225 RMSE=1.4918 R2=0.0509
+  Epoch   5 | loss=2.2463 | val MAE=1.0072 RMSE=1.2272 R2=0.3578
+  Epoch  10 | loss=0.9967 | val MAE=0.8045 RMSE=1.0047 R2=0.5695
+  Epoch  15 | loss=0.6898 | val MAE=0.7272 RMSE=0.9395 R2=0.6236
+  Epoch  20 | loss=0.6210 | val MAE=0.7835 RMSE=1.0480 R2=0.5317
+  Epoch  25 | loss=0.4434 | val MAE=0.7145 RMSE=0.9693 R2=0.5993
+  Epoch  30 | loss=0.3618 | val MAE=0.6874 RMSE=0.9292 R2=0.6318
+  Early stopping at epoch 33
+[Exp2-finetune] Training done in 47.1s
+
+[Exp2-finetune] Test Results:
+  MAE  = 0.6510 eV
+  RMSE = 0.9688 eV
+  R2   = 0.6280
+[Exp2-finetune] Results saved to /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp2_scibert_multiseed/seed_1337/finetune/
+[2026-05-07 19:53:32] Done seed=1337

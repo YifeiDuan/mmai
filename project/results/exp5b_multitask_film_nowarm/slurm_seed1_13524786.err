@@ -1,0 +1,4 @@
+/home/jinzhta/.conda/envs/mpppo/lib/python3.11/site-packages/pymatgen/core/structure.py:3117: UserWarning: Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  struct = parser.parse_structures(primitive=primitive)[0]
+/home/jinzhta/.conda/envs/mpppo/lib/python3.11/site-packages/pymatgen/core/structure.py:3117: UserWarning: Issues encountered while parsing CIF: 1 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  struct = parser.parse_structures(primitive=primitive)[0]

@@ -1,0 +1,37 @@
+[2026-05-07 20:00:35] Exp7 ALBEF seed=7 on node4402
+[Exp5] seed=7, device=cuda, amp=True, smoke=False
+[Exp5] Train=383, Val=54, Test=56
+[ckpt] ALIGN-init from best_model.pt
+  CGCNN: missing 0, unexpected 0
+  BERT:  missing 0, unexpected 0
+[Exp5] params total=110,723,011, trainable=15,570,883
+  ep   1 | tr_loss=0.8690 | val MAE=1.6335 R2=-0.9294 metal_acc=0.796
+  ep   5 | tr_loss=0.4401 | val MAE=0.7194 R2=0.6047 metal_acc=0.796
+  ep  10 | tr_loss=0.3090 | val MAE=0.5879 R2=0.6986 metal_acc=0.870
+  ep  15 | tr_loss=0.2181 | val MAE=0.6550 R2=0.6176 metal_acc=0.870
+  ep  20 | tr_loss=0.1658 | val MAE=0.6111 R2=0.6051 metal_acc=0.907
+  ep  25 | tr_loss=0.1258 | val MAE=0.5598 R2=0.6569 metal_acc=0.907
+  ep  30 | tr_loss=0.1192 | val MAE=0.5481 R2=0.6820 metal_acc=0.889
+  ep  35 | tr_loss=0.0832 | val MAE=0.7234 R2=0.5443 metal_acc=0.852
+  ep  40 | tr_loss=0.0582 | val MAE=0.5801 R2=0.6777 metal_acc=0.926
+  ep  45 | tr_loss=0.0632 | val MAE=0.5793 R2=0.7406 metal_acc=0.870
+  ep  50 | tr_loss=0.0559 | val MAE=0.5311 R2=0.7310 metal_acc=0.889
+  ep  55 | tr_loss=0.0509 | val MAE=0.5766 R2=0.7061 metal_acc=0.907
+  ep  60 | tr_loss=0.0364 | val MAE=0.5410 R2=0.7453 metal_acc=0.907
+  ep  65 | tr_loss=0.0457 | val MAE=0.4622 R2=0.7557 metal_acc=0.889
+  ep  70 | tr_loss=0.0408 | val MAE=0.5384 R2=0.7572 metal_acc=0.889
+  ep  75 | tr_loss=0.0313 | val MAE=0.5281 R2=0.7798 metal_acc=0.926
+  ep  80 | tr_loss=0.0326 | val MAE=0.4622 R2=0.8247 metal_acc=0.889
+  ep  85 | tr_loss=0.0315 | val MAE=0.3845 R2=0.8722 metal_acc=0.926
+  ep  90 | tr_loss=0.0275 | val MAE=0.5128 R2=0.7898 metal_acc=0.889
+  ep  95 | tr_loss=0.0249 | val MAE=0.4530 R2=0.7992 metal_acc=0.889
+  ep 100 | tr_loss=0.0259 | val MAE=0.4813 R2=0.7845 metal_acc=0.889
+  ep 105 | tr_loss=0.0254 | val MAE=0.5002 R2=0.7822 metal_acc=0.907
+  ep 110 | tr_loss=0.0247 | val MAE=0.5044 R2=0.7236 metal_acc=0.833
+  ep 115 | tr_loss=0.0158 | val MAE=0.5043 R2=0.7380 metal_acc=0.870
+  Early stop @ epoch 115
+[Exp5] training done in 61.9s, best val MAE=0.3845
+
+[Exp5] TEST seed=7: MAE=0.4901 RMSE=0.8216 R2=0.7325 metal_acc=0.839
+[Exp5] saved → /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp7_albef/seed_7/
+[2026-05-07 20:01:53] Done seed=7

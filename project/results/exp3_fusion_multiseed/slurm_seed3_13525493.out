@@ -1,0 +1,30 @@
+[2026-05-07 19:54:35] Exp3 FiLM seed=7 on node4402
+[Exp3-film] Device: cuda
+[Exp3-film] Train=383, Val=54, Test=56
+[Exp3-film] Building fusion model: film
+[Exp3-film] Loading pretrained CGCNN from results/exp1_cgcnn/best_model.pt
+  [CGCNN ckpt] loaded. Missing: 0, Unexpected: 0
+[Exp3-film] Loading pretrained SciBERT from results/exp2_scibert/finetune/best_model.pt
+  [BERT ckpt] loaded. Missing: 0, Unexpected: 0
+[Exp3-film] Total params: 110,690,114, Trainable: 15,537,986
+  Epoch   1 | loss=1.4426 | val MAE=0.8377 RMSE=1.2278 R2=0.3571
+  Epoch   5 | loss=0.3772 | val MAE=0.7428 RMSE=1.0925 R2=0.4910
+  Epoch  10 | loss=0.2189 | val MAE=0.6524 RMSE=1.0209 R2=0.5556
+  Epoch  15 | loss=0.2518 | val MAE=0.6392 RMSE=1.0194 R2=0.5568
+  Epoch  20 | loss=0.2433 | val MAE=0.6637 RMSE=1.0130 R2=0.5624
+  Epoch  25 | loss=0.1392 | val MAE=0.6080 RMSE=0.9507 R2=0.6145
+  Epoch  30 | loss=0.1247 | val MAE=0.5799 RMSE=0.9473 R2=0.6173
+  Epoch  35 | loss=0.1135 | val MAE=0.5782 RMSE=0.9514 R2=0.6140
+  Epoch  40 | loss=0.0816 | val MAE=0.5358 RMSE=0.9023 R2=0.6528
+  Epoch  45 | loss=0.1013 | val MAE=0.5720 RMSE=0.8950 R2=0.6584
+  Epoch  50 | loss=0.0750 | val MAE=0.5877 RMSE=0.9847 R2=0.5865
+  Epoch  55 | loss=0.0751 | val MAE=0.6012 RMSE=0.9301 R2=0.6311
+  Early stopping at epoch 55
+[Exp3-film] Training done in 62.9s
+
+[Exp3-film] Test Results:
+  MAE  = 0.5125 eV
+  RMSE = 0.8762 eV
+  R2   = 0.6957
+[Exp3-film] Results saved to /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp3_fusion_multiseed/seed_7/film/
+[2026-05-07 19:55:49] Done seed=7

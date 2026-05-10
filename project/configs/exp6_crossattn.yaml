@@ -1,0 +1,55 @@
+# Exp 6: Cross-attention token fusion (per-atom Q × per-token K/V)
+# Same recipe as Exp 5 (multi-task, Huber, AMP, cosine LR, 5-seed ensemble)
+# but architecture is fully replaced — no FiLM warm-start (different topology)
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+target: "band_gap"
+output_dir: "results/exp6_crossattn"
+
+graph:
+  radius: 8.0
+  max_neighbors: 12
+  gaussian_dmin: 0.0
+  gaussian_dmax: 8.0
+  gaussian_step: 0.2
+
+text:
+  model_name: "allenai/scibert_scivocab_uncased"
+  max_seq_len: 256
+
+cgcnn:
+  atom_fea_len: 64
+  n_conv: 3
+  h_fea_len: 128
+  n_h: 1
+
+crossattn:
+  attn_dim: 128
+  n_heads: 4
+  dropout: 0.4              # higher dropout — cross-attn is more expressive, easier to overfit
+  head_hidden_dim: 128
+  metal_head_hidden: 64
+
+loss:
+  huber_delta: 0.5
+  alpha_metal: 0.3
+
+train:
+  batch_size: 16
+  lr: 5.0e-5                # ↓ from 1e-4 (cross-attn is more sensitive)
+  weight_decay: 0.01
+  epochs: 200
+  patience: 30
+  seed: 42
+  bert_unfreeze_last_n: 2
+  cgcnn_ckpt: "results/exp1_cgcnn/best_model.pt"
+  bert_ckpt: "results/exp2_scibert/finetune/best_model.pt"
+  scheduler:
+    type: cosine
+    warmup_ratio: 0.1
+  grad_clip_norm: 1.0
+  amp: true
+
+wandb:
+  enabled: true
+  project: "mmai-mpppo-exp6"
+  entity: null

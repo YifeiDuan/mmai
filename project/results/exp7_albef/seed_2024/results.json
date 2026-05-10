@@ -1,0 +1,32 @@
+{
+  "experiment": "exp5_multitask_film",
+  "seed": 2024,
+  "smoke": false,
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 110723011,
+  "n_params_trainable": 15570883,
+  "training_time_s": 32.8,
+  "best_val_mae": 0.5679,
+  "test": {
+    "loss_total": 0.3205,
+    "loss_reg": 0.2047,
+    "loss_metal": 0.386,
+    "mae": 0.5854,
+    "rmse": 0.957,
+    "r2": 0.6371,
+    "metal_acc": 0.7679
+  },
+  "config_summary": {
+    "lr": 0.0001,
+    "batch_size": 16,
+    "epochs_max": 200,
+    "patience": 30,
+    "huber_delta": 0.5,
+    "alpha_metal": 0.3,
+    "warm_start_film": false,
+    "amp": true,
+    "grad_clip": 1.0
+  }
+}

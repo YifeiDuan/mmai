@@ -1,0 +1,32 @@
+[2026-05-07 19:31:36] Starting Exp5 seed=2024 on node4402 GPU=0
+[Exp5] seed=2024, device=cuda, amp=True, smoke=False
+[Exp5] Train=383, Val=54, Test=56
+[ckpt] CGCNN loaded — missing 0, unexpected 0
+[ckpt] BERT  loaded — missing 0, unexpected 0
+[ckpt] FiLM warm-start loaded — metal_head missing (expected): 4, other missing: [], unexpected: []
+[Exp5] params total=110,723,011, trainable=15,570,883
+  ep   1 | tr_loss=0.3288 | val MAE=0.5842 R2=0.5917 metal_acc=0.796
+  ep   5 | tr_loss=0.3220 | val MAE=0.6535 R2=0.5368 metal_acc=0.833
+  ep  10 | tr_loss=0.2782 | val MAE=0.7958 R2=0.4238 metal_acc=0.778
+  ep  15 | tr_loss=0.1804 | val MAE=0.7391 R2=0.4767 metal_acc=0.833
+  ep  20 | tr_loss=0.1344 | val MAE=0.8068 R2=0.4246 metal_acc=0.852
+  ep  25 | tr_loss=0.1134 | val MAE=0.6298 R2=0.5328 metal_acc=0.852
+  ep  30 | tr_loss=0.1072 | val MAE=0.5317 R2=0.6483 metal_acc=0.889
+  ep  35 | tr_loss=0.0757 | val MAE=0.6762 R2=0.5247 metal_acc=0.852
+  ep  40 | tr_loss=0.0780 | val MAE=0.5928 R2=0.6433 metal_acc=0.852
+  ep  45 | tr_loss=0.0507 | val MAE=0.4938 R2=0.7207 metal_acc=0.870
+  ep  50 | tr_loss=0.0459 | val MAE=0.5165 R2=0.7495 metal_acc=0.889
+  ep  55 | tr_loss=0.0517 | val MAE=0.5408 R2=0.7201 metal_acc=0.889
+  ep  60 | tr_loss=0.0471 | val MAE=0.4542 R2=0.8011 metal_acc=0.852
+  ep  65 | tr_loss=0.0673 | val MAE=0.5319 R2=0.7269 metal_acc=0.907
+  ep  70 | tr_loss=0.0461 | val MAE=0.4950 R2=0.7480 metal_acc=0.907
+  ep  75 | tr_loss=0.0386 | val MAE=0.5477 R2=0.7217 metal_acc=0.870
+  ep  80 | tr_loss=0.0338 | val MAE=0.4728 R2=0.7744 metal_acc=0.889
+  ep  85 | tr_loss=0.0341 | val MAE=0.4935 R2=0.7559 metal_acc=0.889
+  ep  90 | tr_loss=0.0248 | val MAE=0.5029 R2=0.7660 metal_acc=0.926
+  Early stop @ epoch 94
+[Exp5] training done in 47.7s, best val MAE=0.3910
+
+[Exp5] TEST seed=2024: MAE=0.5572 RMSE=0.8967 R2=0.6814 metal_acc=0.821
+[Exp5] saved → /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp5_multitask_film/seed_2024/
+[2026-05-07 19:32:41] Done seed=2024

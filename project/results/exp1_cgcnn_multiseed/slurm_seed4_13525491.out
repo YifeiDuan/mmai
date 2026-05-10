@@ -1,0 +1,18 @@
+[2026-05-07 19:52:36] Exp1 seed=999 on node1632
+[Exp1] Device: cuda
+[Exp1] Train=468, Val=63, Test=61
+[Exp1] CGCNN params: 80,193
+  Epoch   1 | loss=4.0265 | val MAE=2.1280 RMSE=2.4402 R2=-1.5018
+  Epoch  10 | loss=0.4546 | val MAE=0.6535 RMSE=0.9174 R2=0.6464
+  Epoch  20 | loss=0.3382 | val MAE=0.8270 RMSE=1.0624 R2=0.5258
+  Epoch  30 | loss=0.2919 | val MAE=0.6441 RMSE=1.0827 R2=0.5075
+  Epoch  40 | loss=0.0680 | val MAE=0.6315 RMSE=1.0884 R2=0.5023
+  Early stopping at epoch 48
+[Exp1] Training done in 7.9s
+
+[Exp1] Test Results:
+  MAE  = 0.6663 eV
+  RMSE = 0.9525 eV
+  R2   = 0.6322
+[Exp1] Results saved to /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp1_cgcnn_multiseed/seed_999/
+[2026-05-07 19:52:50] Done seed=999

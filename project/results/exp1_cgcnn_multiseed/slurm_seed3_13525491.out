@@ -1,0 +1,18 @@
+[2026-05-07 19:51:34] Exp1 seed=7 on node4402
+[Exp1] Device: cuda
+[Exp1] Train=468, Val=63, Test=61
+[Exp1] CGCNN params: 80,193
+  Epoch   1 | loss=3.7181 | val MAE=1.6557 RMSE=1.9189 R2=-0.5471
+  Epoch  10 | loss=0.5301 | val MAE=0.7197 RMSE=1.0227 R2=0.5606
+  Epoch  20 | loss=0.3166 | val MAE=0.7104 RMSE=1.0827 R2=0.5075
+  Epoch  30 | loss=0.1655 | val MAE=0.6627 RMSE=1.1427 R2=0.4514
+  Epoch  40 | loss=0.0766 | val MAE=0.7416 RMSE=1.1574 R2=0.4372
+  Early stopping at epoch 42
+[Exp1] Training done in 6.5s
+
+[Exp1] Test Results:
+  MAE  = 0.6698 eV
+  RMSE = 0.8898 eV
+  R2   = 0.6790
+[Exp1] Results saved to /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp1_cgcnn_multiseed/seed_7/
+[2026-05-07 19:51:47] Done seed=7

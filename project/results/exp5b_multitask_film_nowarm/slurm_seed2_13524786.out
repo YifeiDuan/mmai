@@ -1,0 +1,20 @@
+[2026-05-07 19:39:07] Starting Exp5b (no-warm) seed=2024 on node4308
+[Exp5] seed=2024, device=cuda, amp=True, smoke=False
+[Exp5] Train=383, Val=54, Test=56
+[ckpt] CGCNN loaded — missing 0, unexpected 0
+[ckpt] BERT  loaded — missing 0, unexpected 0
+[Exp5] params total=110,723,011, trainable=15,570,883
+  ep   1 | tr_loss=0.8364 | val MAE=1.5432 R2=-0.6677 metal_acc=0.796
+  ep   5 | tr_loss=0.4679 | val MAE=0.6035 R2=0.6315 metal_acc=0.796
+  ep  10 | tr_loss=0.3313 | val MAE=0.6894 R2=0.5135 metal_acc=0.833
+  ep  15 | tr_loss=0.2037 | val MAE=0.8361 R2=0.3646 metal_acc=0.759
+  ep  20 | tr_loss=0.1585 | val MAE=0.7595 R2=0.4382 metal_acc=0.852
+  ep  25 | tr_loss=0.1238 | val MAE=0.7348 R2=0.4696 metal_acc=0.852
+  ep  30 | tr_loss=0.1305 | val MAE=0.6155 R2=0.5806 metal_acc=0.852
+  ep  35 | tr_loss=0.0924 | val MAE=0.6964 R2=0.5275 metal_acc=0.852
+  Early stop @ epoch 35
+[Exp5] training done in 25.6s, best val MAE=0.6035
+
+[Exp5] TEST seed=2024: MAE=0.6508 RMSE=0.8484 R2=0.7147 metal_acc=0.643
+[Exp5] saved → /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp5b_multitask_film_nowarm/seed_2024/
+[2026-05-07 19:39:52] Done seed=2024

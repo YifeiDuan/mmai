@@ -1,0 +1,20 @@
+[2026-05-07 19:32:35] Starting Exp5 seed=999 on node4402 GPU=0
+[Exp5] seed=999, device=cuda, amp=True, smoke=False
+[Exp5] Train=383, Val=54, Test=56
+[ckpt] CGCNN loaded — missing 0, unexpected 0
+[ckpt] BERT  loaded — missing 0, unexpected 0
+[ckpt] FiLM warm-start loaded — metal_head missing (expected): 4, other missing: [], unexpected: []
+[Exp5] params total=110,723,011, trainable=15,570,883
+  ep   1 | tr_loss=0.3276 | val MAE=0.5871 R2=0.5869 metal_acc=0.796
+  ep   5 | tr_loss=0.3030 | val MAE=0.6162 R2=0.5696 metal_acc=0.815
+  ep  10 | tr_loss=0.2530 | val MAE=0.6830 R2=0.5072 metal_acc=0.815
+  ep  15 | tr_loss=0.1947 | val MAE=0.6294 R2=0.5314 metal_acc=0.870
+  ep  20 | tr_loss=0.1689 | val MAE=0.8070 R2=0.4000 metal_acc=0.833
+  ep  25 | tr_loss=0.1192 | val MAE=0.6443 R2=0.5370 metal_acc=0.833
+  ep  30 | tr_loss=0.1025 | val MAE=0.7688 R2=0.4811 metal_acc=0.870
+  Early stop @ epoch 31
+[Exp5] training done in 18.5s, best val MAE=0.5871
+
+[Exp5] TEST seed=999: MAE=0.5738 RMSE=0.9108 R2=0.6712 metal_acc=0.643
+[Exp5] saved → /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp5_multitask_film/seed_999/
+[2026-05-07 19:33:07] Done seed=999

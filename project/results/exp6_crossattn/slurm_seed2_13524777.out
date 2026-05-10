@@ -1,0 +1,40 @@
+[2026-05-07 19:36:36] Starting Exp6 seed=2024 on node4402 GPU=0
+[Exp6] seed=2024, device=cuda, amp=True, smoke=False
+[Exp6] Train=383, Val=54, Test=56
+[ckpt] CGCNN trunk loaded — missing 0, unexpected 0
+[ckpt] BERT loaded — missing 0, unexpected 0
+[Exp6] params total=110,196,675, trainable=15,044,547
+  ep   1 | tr_loss=0.9055 | val MAE=1.9010 R2=-1.5406 metal_acc=0.796
+  ep   5 | tr_loss=0.8970 | val MAE=1.8786 R2=-1.4808 metal_acc=0.796
+  ep  10 | tr_loss=0.8452 | val MAE=1.7296 R2=-1.1118 metal_acc=0.796
+  ep  15 | tr_loss=0.6973 | val MAE=1.3150 R2=-0.3765 metal_acc=0.870
+  ep  20 | tr_loss=0.4263 | val MAE=0.9491 R2=0.2856 metal_acc=0.833
+  ep  25 | tr_loss=0.2764 | val MAE=0.8388 R2=0.3410 metal_acc=0.778
+  ep  30 | tr_loss=0.2277 | val MAE=0.7053 R2=0.5353 metal_acc=0.870
+  ep  35 | tr_loss=0.1558 | val MAE=0.7812 R2=0.4044 metal_acc=0.833
+  ep  40 | tr_loss=0.1536 | val MAE=0.7556 R2=0.4834 metal_acc=0.889
+  ep  45 | tr_loss=0.1366 | val MAE=0.7004 R2=0.5382 metal_acc=0.889
+  ep  50 | tr_loss=0.1035 | val MAE=0.6134 R2=0.5437 metal_acc=0.889
+  ep  55 | tr_loss=0.0927 | val MAE=0.6053 R2=0.6267 metal_acc=0.870
+  ep  60 | tr_loss=0.0871 | val MAE=0.6234 R2=0.5612 metal_acc=0.870
+  ep  65 | tr_loss=0.0755 | val MAE=0.5656 R2=0.6788 metal_acc=0.870
+  ep  70 | tr_loss=0.0637 | val MAE=0.5653 R2=0.6483 metal_acc=0.852
+  ep  75 | tr_loss=0.0705 | val MAE=0.5952 R2=0.6412 metal_acc=0.852
+  ep  80 | tr_loss=0.0695 | val MAE=0.5038 R2=0.6868 metal_acc=0.870
+  ep  85 | tr_loss=0.0589 | val MAE=0.5721 R2=0.6541 metal_acc=0.870
+  ep  90 | tr_loss=0.0499 | val MAE=0.5135 R2=0.6886 metal_acc=0.870
+  ep  95 | tr_loss=0.0561 | val MAE=0.5440 R2=0.7188 metal_acc=0.852
+  ep 100 | tr_loss=0.0549 | val MAE=0.5440 R2=0.6889 metal_acc=0.907
+  ep 105 | tr_loss=0.0494 | val MAE=0.5340 R2=0.7033 metal_acc=0.889
+  ep 110 | tr_loss=0.0541 | val MAE=0.5603 R2=0.6763 metal_acc=0.889
+  ep 115 | tr_loss=0.0449 | val MAE=0.5505 R2=0.6720 metal_acc=0.870
+  ep 120 | tr_loss=0.0465 | val MAE=0.5514 R2=0.6709 metal_acc=0.870
+  ep 125 | tr_loss=0.0444 | val MAE=0.5190 R2=0.7036 metal_acc=0.852
+  ep 130 | tr_loss=0.0543 | val MAE=0.5800 R2=0.6461 metal_acc=0.870
+  ep 135 | tr_loss=0.0468 | val MAE=0.5791 R2=0.6541 metal_acc=0.852
+  Early stop @ epoch 137
+[Exp6] training done in 100.1s, best val MAE=0.4914
+
+[Exp6] TEST seed=2024: MAE=0.5594 RMSE=0.9529 R2=0.6402 metal_acc=0.804
+[Exp6] saved → /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp6_crossattn/seed_2024/
+[2026-05-07 19:38:30] Done seed=2024

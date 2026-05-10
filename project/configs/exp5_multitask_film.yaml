@@ -1,0 +1,62 @@
+# Exp 5: Multi-task FiLM (band_gap regression + is_metal classification)
+# Stack of high-confidence levers on top of Exp 3 SoTA FiLM:
+#   - Multi-task aux head (is_metal BCE, weight 0.3)
+#   - Huber regression loss (delta 0.5)
+#   - Cosine LR schedule with 10% warmup
+#   - Gradient clipping
+#   - AMP fp16
+#   - Multi-seed ensemble (driven by --seed CLI)
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+target: "band_gap"
+output_dir: "results/exp5_multitask_film"
+
+graph:
+  radius: 8.0
+  max_neighbors: 12
+  gaussian_dmin: 0.0
+  gaussian_dmax: 8.0
+  gaussian_step: 0.2
+
+text:
+  model_name: "allenai/scibert_scivocab_uncased"
+  max_seq_len: 256
+
+cgcnn:
+  atom_fea_len: 64
+  n_conv: 3
+  h_fea_len: 128
+  n_h: 1
+
+fusion:
+  hidden_dim: 256
+  dropout: 0.3            # bumped from 0.2 → small-data anti-overfit
+  metal_head_hidden: 64
+
+loss:
+  huber_delta: 0.5
+  alpha_metal: 0.3
+
+train:
+  batch_size: 16
+  lr: 1.0e-4
+  weight_decay: 0.01
+  epochs: 200
+  patience: 30
+  seed: 42                # overridden via CLI for multi-seed ensemble
+  freeze_cgcnn: false
+  freeze_bert: false
+  bert_unfreeze_last_n: 2
+  cgcnn_ckpt: "results/exp1_cgcnn/best_model.pt"
+  bert_ckpt: "results/exp2_scibert/finetune/best_model.pt"
+  film_ckpt: "results/exp3_fusion/film/best_model.pt"   # warm-start from SoTA (optional)
+  use_film_warm_start: true
+  scheduler:
+    type: cosine
+    warmup_ratio: 0.1
+  grad_clip_norm: 1.0
+  amp: true
+
+wandb:
+  enabled: true
+  project: "mmai-mpppo-exp5"
+  entity: null            # use default

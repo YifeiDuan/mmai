@@ -1,0 +1,21 @@
+{
+  "experiment": "exp8_three_modality",
+  "seed": 7,
+  "smoke": false,
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 121993923,
+  "n_params_trainable": 15665283,
+  "training_time_s": 109.9,
+  "best_val_mae": 0.4468,
+  "test": {
+    "loss_total": 0.5063,
+    "loss_reg": 0.1705,
+    "loss_metal": 1.1193,
+    "mae": 0.4952,
+    "rmse": 0.8863,
+    "r2": 0.6887,
+    "metal_acc": 0.7857
+  }
+}

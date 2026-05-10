@@ -1,0 +1,60 @@
+# Exp 8: 3-modality fusion (CGCNN + SciBERT + ResNet18 ball-stick image)
+# Builds on Exp 5b (best so far): multi-task FiLM with NO warm-start.
+# Adds frozen ResNet18 image encoder concatenated to fusion head.
+dataset_path: "data/processed/multimodal_v1/dataset.parquet"
+target: "band_gap"
+output_dir: "results/exp8_three_modality"
+
+graph:
+  radius: 8.0
+  max_neighbors: 12
+  gaussian_dmin: 0.0
+  gaussian_dmax: 8.0
+  gaussian_step: 0.2
+
+text:
+  model_name: "allenai/scibert_scivocab_uncased"
+  max_seq_len: 256
+
+cgcnn:
+  atom_fea_len: 64
+  n_conv: 3
+  h_fea_len: 128
+  n_h: 1
+
+fusion:
+  hidden_dim: 256
+  dropout: 0.3
+  metal_head_hidden: 64
+
+image:
+  dir: "data/processed/multimodal_v1/images"
+  out_dim: 64
+  freeze_trunk: true
+
+loss:
+  huber_delta: 0.5
+  alpha_metal: 0.3
+
+train:
+  batch_size: 16
+  lr: 1.0e-4
+  weight_decay: 0.01
+  epochs: 200
+  patience: 30
+  seed: 42
+  freeze_cgcnn: false
+  freeze_bert: false
+  bert_unfreeze_last_n: 2
+  cgcnn_ckpt: "results/exp1_cgcnn/best_model.pt"
+  bert_ckpt: "results/exp2_scibert/finetune/best_model.pt"
+  scheduler:
+    type: cosine
+    warmup_ratio: 0.1
+  grad_clip_norm: 1.0
+  amp: true
+
+wandb:
+  enabled: true
+  project: "mmai-mpppo-exp8"
+  entity: null

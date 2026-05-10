@@ -1,0 +1,13 @@
+[2026-05-07 19:36:36] Starting Exp6 seed=42 on node4401 GPU=0
+[Exp6] seed=42, device=cuda, amp=True, smoke=False
+[Exp6] Train=383, Val=54, Test=56
+[ckpt] CGCNN trunk loaded — missing 0, unexpected 0
+[ckpt] BERT loaded — missing 0, unexpected 0
+[Exp6] params total=110,196,675, trainable=15,044,547
+  ep   1 | tr_loss=0.9055 | val MAE=1.9009 R2=-1.5403 metal_acc=0.796
+  ep   5 | tr_loss=0.8969 | val MAE=1.8773 R2=-1.4775 metal_acc=0.796
+  ep  10 | tr_loss=0.8475 | val MAE=1.7361 R2=-1.1278 metal_acc=0.796
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mseed_42[0m at: [34mhttps://wandb.ai/jinzhta-massachusetts-institute-of-technology/mmai-mpppo-exp6/runs/iv1h4orn[0m
+[1;34mwandb[0m: Find logs at: [1;35m../../../../../orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp6_crossattn/seed_42/wandb/run-20260507_193644-iv1h4orn/logs[0m
+[2026-05-07 19:37:09] Done seed=42

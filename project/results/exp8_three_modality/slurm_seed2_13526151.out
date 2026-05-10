@@ -1,0 +1,35 @@
+[2026-05-07 20:04:26] Exp8 3-modality seed=2024 on node4308
+[Exp8] seed=2024, device=cuda, amp=True, smoke=False
+[Exp8] Train=383, Val=54, Test=56
+[ckpt] CGCNN loaded — missing 0, unexpected 0
+[ckpt] BERT loaded — missing 0, unexpected 0
+[Exp8] params total=121,993,923, trainable=15,665,283
+  ep   1 | tr_loss=0.9051 | val MAE=1.8984 R2=-1.5337 metal_acc=0.796
+  ep   5 | tr_loss=0.8265 | val MAE=1.6264 R2=-0.8942 metal_acc=0.796
+  ep  10 | tr_loss=0.3396 | val MAE=0.9851 R2=0.2320 metal_acc=0.556
+  ep  15 | tr_loss=0.1936 | val MAE=0.6565 R2=0.4839 metal_acc=0.870
+  ep  20 | tr_loss=0.1102 | val MAE=0.6862 R2=0.4735 metal_acc=0.852
+  ep  25 | tr_loss=0.1135 | val MAE=0.6424 R2=0.4967 metal_acc=0.907
+  ep  30 | tr_loss=0.1088 | val MAE=0.6949 R2=0.4958 metal_acc=0.889
+  ep  35 | tr_loss=0.0921 | val MAE=0.6544 R2=0.5321 metal_acc=0.870
+  ep  40 | tr_loss=0.0993 | val MAE=0.6814 R2=0.4819 metal_acc=0.833
+  ep  45 | tr_loss=0.0629 | val MAE=0.5744 R2=0.6183 metal_acc=0.852
+  ep  50 | tr_loss=0.0467 | val MAE=0.5363 R2=0.6165 metal_acc=0.833
+  ep  55 | tr_loss=0.0481 | val MAE=0.5239 R2=0.6399 metal_acc=0.796
+  ep  60 | tr_loss=0.0500 | val MAE=0.5629 R2=0.6177 metal_acc=0.815
+  ep  65 | tr_loss=0.0578 | val MAE=0.5494 R2=0.6637 metal_acc=0.852
+  ep  70 | tr_loss=0.0314 | val MAE=0.5788 R2=0.5759 metal_acc=0.852
+  ep  75 | tr_loss=0.0279 | val MAE=0.5274 R2=0.6437 metal_acc=0.852
+  ep  80 | tr_loss=0.0428 | val MAE=0.6014 R2=0.6108 metal_acc=0.852
+  ep  85 | tr_loss=0.0255 | val MAE=0.4947 R2=0.6816 metal_acc=0.833
+  ep  90 | tr_loss=0.0347 | val MAE=0.4995 R2=0.7120 metal_acc=0.815
+  ep  95 | tr_loss=0.0219 | val MAE=0.5007 R2=0.6901 metal_acc=0.833
+  ep 100 | tr_loss=0.0300 | val MAE=0.5243 R2=0.6572 metal_acc=0.833
+  ep 105 | tr_loss=0.0253 | val MAE=0.5500 R2=0.6733 metal_acc=0.815
+  ep 110 | tr_loss=0.0241 | val MAE=0.4984 R2=0.6804 metal_acc=0.796
+  Early stop @ epoch 114
+[Exp8] training done in 109.9s, best val MAE=0.4864
+
+[Exp8] TEST seed=2024: MAE=0.4984 RMSE=0.8339 R2=0.7244 metal_acc=0.768
+[Exp8] saved → /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp8_three_modality/seed_2024/
+[2026-05-07 20:06:34] Done seed=2024

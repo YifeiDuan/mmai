@@ -1,0 +1,24 @@
+[2026-05-07 20:06:34] Exp8 3-modality seed=999 on node2902
+[Exp8] seed=999, device=cuda, amp=True, smoke=False
+[Exp8] Train=383, Val=54, Test=56
+[ckpt] CGCNN loaded — missing 0, unexpected 0
+[ckpt] BERT loaded — missing 0, unexpected 0
+[Exp8] params total=121,993,923, trainable=15,665,283
+  ep   1 | tr_loss=0.9052 | val MAE=1.8990 R2=-1.5352 metal_acc=0.796
+  ep   5 | tr_loss=0.8344 | val MAE=1.6480 R2=-0.9334 metal_acc=0.796
+  ep  10 | tr_loss=0.3319 | val MAE=0.7112 R2=0.4688 metal_acc=0.796
+  ep  15 | tr_loss=0.1817 | val MAE=0.6378 R2=0.5255 metal_acc=0.852
+  ep  20 | tr_loss=0.1478 | val MAE=0.6562 R2=0.5068 metal_acc=0.815
+  ep  25 | tr_loss=0.1513 | val MAE=0.7111 R2=0.4731 metal_acc=0.852
+  ep  30 | tr_loss=0.1050 | val MAE=0.6663 R2=0.5226 metal_acc=0.926
+  ep  35 | tr_loss=0.0891 | val MAE=0.6720 R2=0.4895 metal_acc=0.870
+  ep  40 | tr_loss=0.0727 | val MAE=0.5777 R2=0.5824 metal_acc=0.907
+  ep  45 | tr_loss=0.0701 | val MAE=0.6048 R2=0.5923 metal_acc=0.889
+  ep  50 | tr_loss=0.0708 | val MAE=0.6529 R2=0.5412 metal_acc=0.833
+  ep  55 | tr_loss=0.0549 | val MAE=0.6470 R2=0.5302 metal_acc=0.852
+  Early stop @ epoch 58
+[Exp8] training done in 46.8s, best val MAE=0.5533
+
+[Exp8] TEST seed=999: MAE=0.5717 RMSE=0.9698 R2=0.6273 metal_acc=0.839
+[Exp8] saved → /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp8_three_modality/seed_999/
+[2026-05-07 20:07:34] Done seed=999

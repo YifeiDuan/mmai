@@ -4,13 +4,13 @@
   "n_val": 54,
   "n_params_total": 110114114,
   "n_params_trainable": 14961986,
-  "training_time_s": 281.3,
-  "best_val_retrieval_acc": 0.5278,
+  "training_time_s": 155.3,
+  "best_val_retrieval_acc": 0.5833,
   "final_val_metrics": {
-    "s2t_acc": 0.6111,
-    "t2s_acc": 0.4444,
-    "mean_retrieval_acc": 0.5278,
-    "mean_pos_sim": 0.8794,
-    "loss": 3.9238
+    "s2t_acc": 0.6481,
+    "t2s_acc": 0.5185,
+    "mean_retrieval_acc": 0.5833,
+    "mean_pos_sim": 0.8596,
+    "loss": 3.9261
   }
 }

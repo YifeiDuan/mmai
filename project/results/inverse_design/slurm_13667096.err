@@ -1,0 +1,33 @@
+2026-05-09 23:07:41,771 [INFO] run_inverse_design: Loaded 493 base materials, |A|=62, |B|=66
+2026-05-09 23:07:41,771 [INFO] run_inverse_design: Loading 5-seed ensemble oracle from results/exp5b_multitask_film_nowarm
+2026-05-09 23:07:46,736 [INFO] src.inverse_design.oracle: Loaded 5 ensemble members from results/exp5b_multitask_film_nowarm on cuda
+2026-05-09 23:07:46,742 [INFO] run_inverse_design: Loading Qwen proposer: Qwen/Qwen2.5-VL-3B-Instruct
+2026-05-09 23:07:46,784 [INFO] run_inverse_design: === target=1.00 eV, n_iter=5, n_per_iter=5, seed=0 ===
+2026-05-09 23:07:47,134 [INFO] src.inverse_design.agent: iter 0 (random): best |err|=0.645 (A=Hg B=N base=mp-19893)
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+2026-05-09 23:07:48,284 [INFO] accelerate.utils.modeling: We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.19it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.11it/s]
+2026-05-09 23:07:53,156 [INFO] src.inverse_design.agent: iter 1 (llm): best |err|=0.597 (A=Ag B=Ti base=mp-1213788)
+2026-05-09 23:08:00,014 [INFO] src.inverse_design.agent: iter 2 (llm): best |err|=0.274 (A=Ba B=Ge base=mp-1183920)
+2026-05-09 23:08:02,621 [INFO] src.inverse_design.agent: iter 3 (llm): best |err|=0.213 (A=Ce B=Ge base=mp-19269)
+2026-05-09 23:08:05,223 [INFO] src.inverse_design.agent: iter 4 (llm): best |err|=0.274 (A=Ba B=Ge base=mp-1183920)
+2026-05-09 23:08:05,265 [INFO] run_inverse_design: Wrote 25 records to results/inverse_design/target_1.00 (best |err|=0.213)
+2026-05-09 23:08:05,266 [INFO] run_inverse_design: === target=2.00 eV, n_iter=5, n_per_iter=5, seed=0 ===
+2026-05-09 23:08:05,447 [INFO] src.inverse_design.agent: iter 0 (random): best |err|=0.181 (A=Sr B=Sm base=mp-753534)
+2026-05-09 23:08:08,024 [INFO] src.inverse_design.agent: iter 1 (llm): best |err|=0.075 (A=Na B=Pb base=mp-756464)
+2026-05-09 23:08:10,552 [INFO] src.inverse_design.agent: iter 2 (llm): best |err|=0.158 (A=Ba B=Cr base=mp-555098)
+2026-05-09 23:08:13,121 [INFO] src.inverse_design.agent: iter 3 (llm): best |err|=0.182 (A=Ba B=Cr base=mp-755165)
+2026-05-09 23:08:15,568 [INFO] src.inverse_design.agent: iter 4 (llm): best |err|=0.158 (A=Ba B=Cr base=mp-555098)
+2026-05-09 23:08:15,579 [INFO] run_inverse_design: Wrote 25 records to results/inverse_design/target_2.00 (best |err|=0.075)
+2026-05-09 23:08:15,580 [INFO] run_inverse_design: === target=3.00 eV, n_iter=5, n_per_iter=5, seed=0 ===
+2026-05-09 23:08:15,760 [INFO] src.inverse_design.agent: iter 0 (random): best |err|=0.819 (A=Sr B=Sm base=mp-753534)
+2026-05-09 23:08:18,354 [INFO] src.inverse_design.agent: iter 1 (llm): best |err|=0.966 (A=La B=Sb base=mp-753534)
+2026-05-09 23:08:21,235 [INFO] src.inverse_design.agent: iter 2 (llm): best |err|=0.427 (A=La B=Nb base=mp-1180739)
+2026-05-09 23:08:23,919 [INFO] src.inverse_design.agent: iter 3 (llm): best |err|=1.837 (A=Ba B=Ti base=mp-756147)
+2026-05-09 23:08:27,581 [INFO] src.inverse_design.agent: iter 4 (llm): best |err|=1.837 (A=Ba B=Ti base=mp-756147)
+2026-05-09 23:08:27,593 [INFO] run_inverse_design: Wrote 25 records to results/inverse_design/target_3.00 (best |err|=0.427)
+2026-05-09 23:08:27,604 [INFO] run_inverse_design: Summary written:
+ target_bg  best_pred_bg_mean  best_pred_bg_std  best_error best_A best_B  best_base  best_charge_warning  best_low_confidence
+       1.0           0.786655          0.205105    0.213345     Ce     Ge   mp-19269                 True                False
+       2.0           1.925074          0.325112    0.074926     Na     Pb  mp-756464                 True                False
+       3.0           2.572752          0.536553    0.427248     La     Nb mp-1180739                False                 True

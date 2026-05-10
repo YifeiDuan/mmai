@@ -1,0 +1,46 @@
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/jinzhta/.netrc.
+wandb: Currently logged in as: jinzhta (jinzhta-massachusetts-institute-of-technology) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run o7814zas
+wandb: Tracking run with wandb version 0.26.1
+wandb: Run data is saved locally in /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp5_multitask_film/seed_7/wandb/run-20260507_193145-o7814zas
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run seed_7
+wandb: ⭐️ View project at https://wandb.ai/jinzhta-massachusetts-institute-of-technology/mmai-mpppo-exp5
+wandb: 🚀 View run at https://wandb.ai/jinzhta-massachusetts-institute-of-technology/mmai-mpppo-exp5/runs/o7814zas
+/home/jinzhta/.conda/envs/mpppo/lib/python3.11/site-packages/pymatgen/core/structure.py:3117: UserWarning: Issues encountered while parsing CIF: 1 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  struct = parser.parse_structures(primitive=primitive)[0]
+/home/jinzhta/.conda/envs/mpppo/lib/python3.11/site-packages/pymatgen/core/structure.py:3117: UserWarning: Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.
+  struct = parser.parse_structures(primitive=primitive)[0]
+wandb: updating run metadata
+wandb: uploading history steps 390-774, summary, console lines 13-20
+wandb: 
+wandb: Run history:
+wandb:                  epoch ▁▁▁▁▂▂▂▂▂▂▂▂▂▂▂▃▃▃▄▄▄▅▅▅▅▅▅▆▆▆▆▇▇▇▇█████
+wandb:            epoch/epoch ▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▅▆▆▆▆▇▇▇▇███
+wandb:               epoch/lr ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇█████████████
+wandb: epoch/train_loss_metal ███████▇▇▆▅▅▄▃▃▃▂▂▃▃▂▂▂▂▁▁▁▁▁▁▁
+wandb:   epoch/train_loss_reg ▆▆▇▇▆▅▆▅▇▆▆▅▅▅▄▄▇▅█▇▃▅▆▃▅▄▅▃▃▂▁
+wandb: epoch/train_loss_total █████▇▇▇▇▆▆▅▄▄▃▃▃▃▄▄▂▂▃▂▂▂▂▁▂▁▁
+wandb:   epoch/val_loss_total ▆▇▇▇▇▇▇▆▇▆▄█▂▂▅▄█▁▃▂▃▁▃▃█▆▄▃▄▂▁
+wandb:          epoch/val_mae ▁▂▃▃▃▃▃▃▅▅▃█▃▃▆▅█▂▅▃▄▁▃▃▆▄▃▃▄▁▂
+wandb:    epoch/val_metal_acc ▂▂▂▂▃▆▄▃▇▇▆▁█▇▇▆▃▇▄▇█▆▃▇▄▆▆▆▇▆█
+wandb:           epoch/val_r2 █▇▇▆▅▆▅▅▅▄▅▁▅▅▃▃▂▅▃▅▅▆▅▅▂▃▃▅▄▆▇
+wandb:                     +5 ...
+wandb: 
+wandb: Run summary:
+wandb:                  epoch 31
+wandb:            epoch/epoch 31
+wandb:               epoch/lr 0.0001
+wandb: epoch/train_loss_metal 0.10035
+wandb:   epoch/train_loss_reg 0.07004
+wandb: epoch/train_loss_total 0.10015
+wandb:   epoch/val_loss_total 0.32939
+wandb:          epoch/val_mae 0.6227
+wandb:    epoch/val_metal_acc 0.8889
+wandb:           epoch/val_r2 0.5602
+wandb:                     +8 ...
+wandb: 
+wandb: 🚀 View run seed_7 at: https://wandb.ai/jinzhta-massachusetts-institute-of-technology/mmai-mpppo-exp5/runs/o7814zas
+wandb: ⭐️ View project at: https://wandb.ai/jinzhta-massachusetts-institute-of-technology/mmai-mpppo-exp5
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./results/exp5_multitask_film/seed_7/wandb/run-20260507_193145-o7814zas/logs

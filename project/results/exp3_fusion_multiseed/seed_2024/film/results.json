@@ -1,0 +1,20 @@
+{
+  "experiment": "exp3_fusion_film",
+  "fusion_type": "film",
+  "target": "band_gap",
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 110690114,
+  "n_params_trainable": 15537986,
+  "pretrained_encoders": true,
+  "freeze_cgcnn": false,
+  "freeze_bert": false,
+  "training_time_s": 52.7,
+  "best_val_mae": 0.5426,
+  "test": {
+    "mae": 0.5169733762741089,
+    "rmse": 0.8452003164822464,
+    "r2": 0.7168998718261719
+  }
+}

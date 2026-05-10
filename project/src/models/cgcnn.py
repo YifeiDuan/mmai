@@ -146,3 +146,19 @@ class CGCNN(nn.Module):
         crys_fea = self.conv_to_fc_softplus(self.conv_to_fc(crys_fea))
         crys_fea = self.hidden(crys_fea)
         return crys_fea
+
+    def get_node_embedding(
+        self,
+        atom_fea: torch.Tensor,
+        nbr_fea: torch.Tensor,
+        nbr_idx: torch.Tensor,
+    ) -> torch.Tensor:
+        """Per-atom embeddings AFTER conv stack, BEFORE crystal-level mean pool.
+
+        Returns (N_total, atom_fea_len). Used by token-level cross-attention
+        fusion (Exp 6) where each atom queries the text token sequence.
+        """
+        atom_fea = self.embedding(atom_fea)
+        for conv in self.convs:
+            atom_fea = conv(atom_fea, nbr_fea, nbr_idx)
+        return atom_fea

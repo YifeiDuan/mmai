@@ -1,0 +1,27 @@
+[2026-05-07 19:37:35] Starting Exp6 seed=7 on node5002 GPU=0
+[Exp6] seed=7, device=cuda, amp=True, smoke=False
+[Exp6] Train=383, Val=54, Test=56
+[ckpt] CGCNN trunk loaded — missing 0, unexpected 0
+[ckpt] BERT loaded — missing 0, unexpected 0
+[Exp6] params total=110,196,675, trainable=15,044,547
+  ep   1 | tr_loss=0.9055 | val MAE=1.9009 R2=-1.5404 metal_acc=0.796
+  ep   5 | tr_loss=0.8968 | val MAE=1.8772 R2=-1.4773 metal_acc=0.796
+  ep  10 | tr_loss=0.8449 | val MAE=1.7230 R2=-1.0964 metal_acc=0.796
+  ep  15 | tr_loss=0.7075 | val MAE=1.3132 R2=-0.3777 metal_acc=0.870
+  ep  20 | tr_loss=0.4428 | val MAE=0.9573 R2=0.3051 metal_acc=0.833
+  ep  25 | tr_loss=0.2777 | val MAE=0.7926 R2=0.3997 metal_acc=0.852
+  ep  30 | tr_loss=0.1978 | val MAE=0.7262 R2=0.5221 metal_acc=0.852
+  ep  35 | tr_loss=0.1660 | val MAE=0.6534 R2=0.5415 metal_acc=0.870
+  ep  40 | tr_loss=0.1284 | val MAE=0.7777 R2=0.3750 metal_acc=0.889
+  ep  45 | tr_loss=0.1172 | val MAE=0.6058 R2=0.4985 metal_acc=0.889
+  ep  50 | tr_loss=0.1045 | val MAE=0.6211 R2=0.5844 metal_acc=0.889
+  ep  55 | tr_loss=0.0887 | val MAE=0.6088 R2=0.5282 metal_acc=0.889
+  ep  60 | tr_loss=0.0835 | val MAE=0.6561 R2=0.5512 metal_acc=0.889
+  ep  65 | tr_loss=0.0711 | val MAE=0.5948 R2=0.5834 metal_acc=0.870
+  ep  70 | tr_loss=0.0775 | val MAE=0.5607 R2=0.5960 metal_acc=0.889
+  Early stop @ epoch 72
+[Exp6] training done in 59.4s, best val MAE=0.4990
+
+[Exp6] TEST seed=7: MAE=0.6282 RMSE=1.0266 R2=0.5823 metal_acc=0.821
+[Exp6] saved → /orcd/home/002/jinzhta/mpppo/MMAI_2026spring/project/results/exp6_crossattn/seed_7/
+[2026-05-07 19:38:49] Done seed=7
