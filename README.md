@@ -4,7 +4,7 @@ Welcome to my site for Modeling Multimodal AI 2026.
 This repo contains my homework assignments and group project documentation throughout the class.
 
 ## Final Project
-For the [final project](./project/), we explored how text data can complement the crystal graph representations of perovskite materials in property prediction and inverse design.
+For the [final project](./project/), we explored how text and image data can complement the crystal graph representations of perovskite materials in property prediction and inverse design.
 
 ## Homework
 - [Homework 1 - Dataset: Perovskite](./homework/homework-1/)
