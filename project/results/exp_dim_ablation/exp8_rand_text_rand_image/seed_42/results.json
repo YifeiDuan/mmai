@@ -1,0 +1,27 @@
+{
+  "experiment": "exp_dim_ablation",
+  "base_experiment": "exp8_three_modality",
+  "ablation_mode": "rand_text_rand_image",
+  "ablate_text": true,
+  "ablate_image": true,
+  "text_embed_std": 1.0,
+  "image_embed_std": 1.0,
+  "seed": 42,
+  "smoke": false,
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 121993923,
+  "n_params_trainable": 825027,
+  "training_time_s": 712.8,
+  "best_val_mae": 0.5463,
+  "test": {
+    "loss_total": 0.3328,
+    "loss_reg": 0.192,
+    "loss_metal": 0.4691,
+    "mae": 0.5394,
+    "rmse": 0.9349,
+    "r2": 0.6536,
+    "metal_acc": 0.875
+  }
+}

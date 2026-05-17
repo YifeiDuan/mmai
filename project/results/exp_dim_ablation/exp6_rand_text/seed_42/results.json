@@ -1,0 +1,37 @@
+{
+  "experiment": "exp6_dim_ablation_rand_text",
+  "base_experiment": "exp6_crossattn",
+  "ablation": "rand_text",
+  "text_embed_std": 1.0,
+  "seed": 42,
+  "smoke": false,
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 110196675,
+  "n_params_trainable": 278211,
+  "training_time_s": 261.0,
+  "best_val_mae": 0.538,
+  "test": {
+    "loss_total": 0.3344,
+    "loss_reg": 0.2343,
+    "loss_metal": 0.3336,
+    "mae": 0.6172,
+    "rmse": 1.0354,
+    "r2": 0.5752,
+    "metal_acc": 0.875
+  },
+  "config_summary": {
+    "lr": 5e-05,
+    "batch_size": 16,
+    "epochs_max": 200,
+    "patience": 30,
+    "huber_delta": 0.5,
+    "alpha_metal": 0.3,
+    "attn_dim": 128,
+    "n_heads": 4,
+    "dropout": 0.4,
+    "amp": true,
+    "grad_clip": 1.0
+  }
+}

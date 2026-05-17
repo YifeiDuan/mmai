@@ -1,0 +1,21 @@
+{
+  "experiment": "exp3_dim_ablation_rand_text_film",
+  "base_experiment": "exp3_fusion_film",
+  "ablation": "rand_text",
+  "text_embed_std": 1.0,
+  "fusion_type": "film",
+  "target": "band_gap",
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 110690114,
+  "n_params_trainable": 771650,
+  "freeze_cgcnn": false,
+  "training_time_s": 29.6,
+  "best_val_mae": 0.5603,
+  "test": {
+    "mae": 0.7510254979133606,
+    "rmse": 1.0656672002317515,
+    "r2": 0.5499467849731445
+  }
+}

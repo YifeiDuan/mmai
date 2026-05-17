@@ -1,0 +1,21 @@
+{
+  "experiment": "exp3_dim_ablation_rand_text_gated",
+  "base_experiment": "exp3_fusion_gated",
+  "ablation": "rand_text",
+  "text_embed_std": 1.0,
+  "fusion_type": "gated",
+  "target": "band_gap",
+  "n_train": 383,
+  "n_val": 54,
+  "n_test": 56,
+  "n_params_total": 110427458,
+  "n_params_trainable": 508994,
+  "freeze_cgcnn": false,
+  "training_time_s": 30.1,
+  "best_val_mae": 0.6584,
+  "test": {
+    "mae": 0.6566470265388489,
+    "rmse": 0.9800515978230939,
+    "r2": 0.6193563342094421
+  }
+}
