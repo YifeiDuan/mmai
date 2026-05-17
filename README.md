@@ -10,6 +10,8 @@ For the [final project](./project/), we explored how text data can complement th
 - [Homework 1 - Dataset: Perovskite](./homework/homework-1/)
 - [Homework 2 - Fusion and Alignment: Multimodal Property Prediction; Contrastive Learning and Cross-modal Retrieval](./homework/homework-2/)
 - [Homework 3 - VLM: Space Group Classification](./homework/homework-3/)
+- [Homework 4 - RL Adaptation of VLM for Perovskite Classification](./homework/homework-4/)
+- [Homework 5 - Building and Evaluating QA Agents with LLM and VLM Backbones](./homework/homework-5/)
 
 
 <!-- 
